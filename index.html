@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Dims Movie</title>
+    
+    <style>
+
+          body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card img{
+            width:100%;
+            max-height:400px;
+        }
+
+        @media (max-width: 576px) {
+        h2.judul{
+            font-size: 24px;
+        }
+        .card img{
+            width:100%;
+            max-height:300px;
+        }
+        img.img-fluid{
+            width:100%;
+            max-height:300px;
+        }
+        ul.list-group li h4{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        ul.list-group li{
+            font-size: 14px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-4">
+            <div class="col">
+                <h2 class="judul"><span style="color:green; font-weight: bold;"> DIM'S </span>MOVIE</h1>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search Movie..." id="search-input" autofocus="on">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="search-button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row movie-list">
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="movieID" tabindex="-1" aria-labelledby="movieIDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search Movie</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
